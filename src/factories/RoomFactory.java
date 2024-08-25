@@ -20,7 +20,7 @@ public class RoomFactory {
         try{
             String roomType = getRandomRoomName();
             if(Objects.equals(roomType, "RitualRoom")){
-
+                return RitualRoomFactory.
             }
             else{
                 return (Room) Class.forName(roomType).newInstance();
